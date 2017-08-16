@@ -1,3 +1,4 @@
+#Drag this file to your desktop
 #Quick script I made to browse 'anonymously' on Linux
 #This uses the service Proxychains and obviously Tor.
 #I made this script, but obviously didn't make Proxychains or Tor.
@@ -12,8 +13,6 @@ print("Changing DNS servers.... Read first part of instructions.txt which is on 
 time.sleep(5)
 os.system("sudo rm -r /etc/resolv.conf")
 os.system("sudo nano /etc/resolv.conf")
-
-print("Run this script on your desktop.")
 print("Enter password when promted")
 os.system("sudo apt-get install tor")
 os.system("service tor start")
